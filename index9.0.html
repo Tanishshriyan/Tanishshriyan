@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanish Shriyan - Portfolio</title>
+    <style>
+        /* Base Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #1b1b1b, #2e2e2e);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #4b0082, #320d6d);
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            color: #ffffff;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: #50c878;
+            text-shadow: 0px 0px 10px rgba(80, 200, 120, 0.5);
+        }
+
+        header p {
+            margin-top: 20px;
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: #e6e6e6;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0 50px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #50c878;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            border: 2px solid #50c878;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            background: #50c878;
+            color: #320d6d;
+        }
+
+        /* Main Section */
+        main {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 30px;
+            background: #262626;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+        }
+
+        section {
+            margin-bottom: 50px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeIn 1.5s forwards;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            color: #50c878;
+            margin-bottom: 20px;
+            text-shadow: 0px 0px 10px rgba(80, 200, 120, 0.5);
+        }
+
+        section p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #e0e0e0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #e6e6e6;
+        }
+
+        /* Styled Links */
+        .email a {
+            color: #50c878; /* Emerald Green */
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .email a:hover {
+            color: #66e09e;
+        }
+
+        .linkedin a {
+            color: #0056b3; /* Royal Blue */
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .linkedin a:hover {
+            color: #3399ff;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Footer Section */
+        footer {
+            text-align: center;
+            background: #320d6d;
+            padding: 30px;
+            border-top: 2px solid #50c878;
+        }
+
+        footer p {
+            font-size: 1rem;
+            color: #dcdcdc;
+        }
+
+        footer a {
+            color: #50c878;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tanish Shriyan</h1>
+        <p>Student at Indira Shiva Rao Polytechnic, Studying Computer Science and Engineering</p>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Welcome! I’m <strong>Tanish Shriyan</strong>, a Computer Science and Engineering student at Indira Shiva Rao Polytechnic, Manipal. I am passionate about leveraging technology to solve complex challenges, create efficient solutions, and innovate with creativity.</p>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Institution:</strong> Indira Shiva Rao Polytechnic</li>
+                <li><strong>Field of Study:</strong> Computer Science and Engineering</li>
+                <li><strong>Location:</strong> Manipal</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to connect with me through the following channels:</p>
+            <ul>
+                <li class="email"><strong>Email:</strong> <a href="mailto:tanishshriyan@gmail.com">tanishshriyan@gmail.com</a></li>
+                <li class="linkedin"><strong>LinkedIn:</strong> <a href="https://in.linkedin.com/in/tanish-shriyan-b0a63529b" target="_blank">Tanish Shriyan</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Tanish Shriyan. Built for excellence. <a href="#top">Back to Top</a></p>
+    </footer>
+</body>
+</html>
